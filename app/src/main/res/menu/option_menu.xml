@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/addtodo"
+        android:icon="@drawable/plus"
+        app:showAsAction="always"
+        android:title="@string/plus" />
+    <item android:id="@+id/showcompletetodo"
+        android:icon="@drawable/like_it"
+        app:showAsAction="always"
+        android:title="@string/completed" />
+</menu>

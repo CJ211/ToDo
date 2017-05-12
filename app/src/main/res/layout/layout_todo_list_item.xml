@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#fcf5e9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="#f5d0ed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/todo_btnEdit"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/edit" />
+
+        <ImageView
+            android:id="@+id/todo_btnDelete"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/delete" />
+
+        <TextView
+            android:id="@+id/tv_todo_heading"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_toLeftOf="@id/todo_btnDelete"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/todo_btnEdit"
+            android:gravity="top|center_horizontal"
+            android:text="date"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_todo_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_todo_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_todo_duedate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Due date"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+</LinearLayout>
